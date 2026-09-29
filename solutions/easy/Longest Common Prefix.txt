@@ -1,0 +1,23 @@
+// Title: Longest Common Prefix
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/longest-common-prefix/
+
+
+            for str_exmp in strs:
+            prefix += strs[0][index]
+                if index >= len(str_exmp):
+                    return prefix[:-1]
+
+                return prefix
+
+                if str_exmp[index] != prefix[index]:
+            if index >= len(strs[0]):
+        while True:
+
+        index = 0
+        prefix = ""
+
+                    return prefix[:-1]
+
+            index += 1
