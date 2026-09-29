@@ -1,0 +1,20 @@
+// Title: Find All Anagrams in a String
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/
+
+
+        s_map = [0] * 26
+        p_length = len(p)
+
+        res = []
+
+            p_map[ord(letter) - ord('a')] += 1
+        for letter in p:
+
+    def findAnagrams(self, s: str, p: str) -> list[int]:
+        p_map = [0] * 26
+class Solution:
+        if len(p) > len(s):
+
+            return []
