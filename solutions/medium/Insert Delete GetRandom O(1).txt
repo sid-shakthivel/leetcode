@@ -1,0 +1,24 @@
+// Title: Insert Delete GetRandom O(1)
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/insert-delete-getrandom-o(1)/
+
+
+        self.indices[temp] = index_of_element_to_remove
+        del self.indices[val]
+
+        return True
+
+
+        self.nums[-1] = val
+        self.nums[index_of_element_to_remove] = temp
+        index_of_element_to_remove = self.indices[val]
+
+        temp = self.nums[-1]
+            return False
+        if val not in self.indices:
+    def remove(self, val: int) -> bool:
+
+        return True
+
+        self.nums.pop()
