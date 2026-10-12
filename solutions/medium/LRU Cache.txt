@@ -1,0 +1,23 @@
+// Title: LRU Cache
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/lru-cache/
+
+                # Evict the least recently used thing which is at the tail
+                lru_node = self.tail.prev
+
+
+                del self.cache[lru_node.key]
+
+            node = Node(key, value)
+
+                lru_node.prev.next = lru_node.next
+                lru_node.next.prev = lru_node.prev
+
+            # Insert node
+
+            node.next = self.head.next
+            node.prev = self.head
+
+            self.head.next.prev = node
+            self.head.next = node
