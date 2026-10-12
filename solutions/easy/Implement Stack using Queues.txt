@@ -1,0 +1,23 @@
+// Title: Implement Stack using Queues
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/implement-stack-using-queues/
+
+
+    def pop(self) -> int:
+        value = self.queue[0]
+        self.queue.pop(0)
+            value = self.queue.pop(0)
+            self.queue.append(value)
+        for i in range(len(self.queue) - 1):
+
+        self.queue.append(x)
+
+    def push(self, x: int) -> None:
+        self.start = 0
+        self.queue = []
+    def __init__(self):
+
+class MyStack:
+
+from collections import deque
