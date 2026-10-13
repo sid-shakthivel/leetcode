@@ -1,0 +1,23 @@
+// Title: Time Based Key-Value Store
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/time-based-key-value-store/
+
+
+            mid = (left + right) // 2
+        while left <= right:
+
+        right = len(arr) -1
+        left = 0
+        rtn = ""
+
+            if arr[mid][0] == timestamp:
+                return arr[mid][1]
+            elif arr[mid][0] > timestamp:
+                right = mid - 1
+            else:
+                rtn = arr[mid][1]
+                left = mid + 1
+
+        return rtn
+
