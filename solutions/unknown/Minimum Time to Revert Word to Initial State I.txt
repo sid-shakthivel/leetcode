@@ -1,0 +1,5 @@
+// Title: Minimum Time to Revert Word to Initial State I
+            // Difficulty: Unknown
+            // Language: undefined
+            // Link: https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/
+
