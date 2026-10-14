@@ -1,0 +1,26 @@
+// Title: Snapshot Array
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/snapshot-array/
+
+        self.changed_indexes.clear()
+
+        self.snap_id += 1
+        return self.snap_id - 1
+
+    def get(self, index: int, snap_id: int) -> int:
+        rtn_value = -1
+
+        for saved_snap_id, value in self.snaps[index]:
+            if saved_snap_id <= snap_id:
+                rtn_value = value
+
+        return rtn_value
+
+
+
+# Your SnapshotArray object will be instantiated and called as such:
+# obj = SnapshotArray(length)
+# obj.set(index,val)
+# param_2 = obj.snap()
+# param_3 = obj.get(index,snap_id)
