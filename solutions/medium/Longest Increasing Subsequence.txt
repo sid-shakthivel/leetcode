@@ -1,0 +1,19 @@
+// Title: Longest Increasing Subsequence
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/longest-increasing-subsequence/
+
+
+            for j in range(i):
+                if nums[j] < nums[i]:
+                    max_len = max(max_len, dp[j])
+
+            dp[i] += max_len
+            max_len = 0
+        for i in range(len(nums)):
+
+        dp = [1] * len(nums)
+            
+        return max(dp)
+    def lengthOfLIS(self, nums: list[int]) -> int:
+class Solution:
