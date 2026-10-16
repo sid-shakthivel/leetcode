@@ -1,0 +1,18 @@
+// Title: Happy Number
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/happy-number/
+
+            return res
+
+        seen = set()
+
+        while True:
+            n = _get_sum_of_squares_of_digits(n)
+            if n == 1:
+                return True
+
+
+            if n in seen:
+                return False
+            seen.add(n)
