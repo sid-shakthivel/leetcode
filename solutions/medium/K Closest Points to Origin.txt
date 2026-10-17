@@ -1,0 +1,20 @@
+// Title: K Closest Points to Origin
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/k-closest-points-to-origin/
+
+
+class Solution:
+    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
+        pq = []
+        for point in points:
+            distance = point[0] * point[0] + point[1] * point[1]
+            heapq.heappush(pq, (distance, point))
+
+        res = []
+
+        for _ in range(k):
+
+            res.append(heapq.heappop(pq)[1])
+        return res
+import heapq
