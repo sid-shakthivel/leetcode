@@ -1,0 +1,22 @@
+// Title: Copy List with Random Pointer
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/copy-list-with-random-pointer/
+
+            new_curr = new_curr.next
+            curr = curr.next
+
+        curr = head
+        new_curr = new_head.next
+
+            og_node_to_new[curr] = new_node
+
+
+        while curr:
+            if curr.random:
+                new_curr.random = og_node_to_new[curr.random]
+
+            new_curr = new_curr.next
+            curr = curr.next
+
+        return new_head.next
