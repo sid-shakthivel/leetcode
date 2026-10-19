@@ -1,0 +1,27 @@
+// Title: Number of Islands
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/number-of-islands/
+
+                    visited.add(coordinate_pair)
+                    stack = [coordinate_pair]
+                    island_count += 1
+
+                while stack:
+                    row, col = stack.pop()
+
+                    if row - 1 > -1 and (row - 1, col) not in visited and grid[row - 1][col] == '1':
+                        visited.add((row - 1, col))
+                        stack.append((row - 1, col))
+                    
+                    if row + 1 < height and (row + 1, col) not in visited and grid[row + 1][col] == '1':
+                        visited.add((row + 1, col))
+                        stack.append((row + 1, col))
+
+                    if col - 1 > -1 and (row, col - 1) not in visited and grid[row][col - 1] == '1':
+                        visited.add((row, col - 1))
+                        stack.append((row, col - 1))
+                    
+                    if col + 1 < width and (row, col + 1) not in visited and grid[row][col + 1] == '1':
+                        visited.add((row, col + 1))
+                        stack.append((row, col + 1))
