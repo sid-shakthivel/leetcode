@@ -1,0 +1,21 @@
+// Title: Longest Nice Subarray
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/longest-nice-subarray/
+
+
+        for right in range(len(nums)):
+            
+            num = nums[right]
+
+            while current_bits & num > 0:
+                left += 1
+            current_bits |= num
+
+        current_bits = 0
+
+        longest = 0
+        left = 0
+    def longestNiceSubarray(self, nums: list[int]) -> int:
+                current_bits ^= nums[left]
+class Solution:
