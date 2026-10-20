@@ -1,0 +1,16 @@
+// Title: Height Checker
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/height-checker/
+
+class Solution:
+    def heightChecker(self, heights: list[int]) -> int:
+        sorted_heights = sorted(heights)
+        not_matches = 0
+
+        for i in range(len(heights)):
+            if heights[i] != sorted_heights[i]:
+
+        return not_matches
+                not_matches += 1
+
