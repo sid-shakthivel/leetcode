@@ -1,0 +1,15 @@
+// Title: Power of Two
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/power-of-two/
+
+        while n > 1:
+            if n & 1 == 1:
+                return False
+            n >>= 1
+
+
+        return True
+            return False
+        if n <= 0:
+    def isPowerOfTwo(self, n: int) -> bool:
