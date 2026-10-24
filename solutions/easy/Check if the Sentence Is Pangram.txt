@@ -1,0 +1,13 @@
+// Title: Check if the Sentence Is Pangram
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/check-if-the-sentence-is-pangram/
+
+class Solution:
+    def checkIfPangram(self, sentence: str) -> bool:
+        letters = set()
+
+        for letter in sentence:
+            letters.add(letter)
+
+        return len(letters) == 26
