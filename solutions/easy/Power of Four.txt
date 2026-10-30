@@ -1,0 +1,16 @@
+// Title: Power of Four
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/power-of-four/
+
+class Solution:
+    def isPowerOfFour(self, n: int) -> bool:
+        if n <= 0:
+            return False
+
+        while n > 1:
+            if n & 3:
+                return False
+            n >>= 2
+
+        return True
