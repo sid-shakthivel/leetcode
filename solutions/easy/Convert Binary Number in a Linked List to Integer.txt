@@ -1,0 +1,17 @@
+// Title: Convert Binary Number in a Linked List to Integer
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
+
+    def getDecimalValue(self, head: ListNode | None) -> int:
+        curr = head
+        while curr:
+        res = 0
+            curr = curr.next
+            res <<= 1
+
+
+            res |= curr.val
+        return res
+class Solution:
+#         self.next = next
