@@ -1,0 +1,20 @@
+// Title: Solving Questions With Brainpower
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/solving-questions-with-brainpower/
+
+
+        for i in range(len(questions) - 2, -1, -1):
+            entry = questions[i]
+
+            if entry[1] + i + 1 >= len(questions):
+                dp[i] = max(entry[0], dp[i + 1])
+
+        return max(dp)
+            else:
+                dp[i] += max(entry[0] + dp[i + entry[1] + 1], dp[i + 1])
+        print(dp)
+        dp[-1] = questions[-1][0]
+
+
+        
